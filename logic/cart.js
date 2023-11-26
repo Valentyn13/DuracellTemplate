@@ -95,11 +95,9 @@ const addToCart = (event, data) => {
   event.preventDefault();
   const form = event.target;
 
-  //const cartItemsAmount = document.querySelector(".cart-items-count");
-  // const formButton = document.querySelector('.submit-add-product-from')
-  // const formActionResult = document.querySelector('.form-action-result')
-  // formActionResult.textContent = ''
-
+  const amountInput = document.querySelector('.amoutn-select')
+  const resultDiv = document.querySelector('.form-action-result')
+  
   const formData = new FormData(form);
   const { amount } = Object.fromEntries(formData.entries());
 
@@ -110,7 +108,12 @@ const addToCart = (event, data) => {
     name,
     image,
   });
-  console.log(cartItems);
+  resultDiv.classList.toggle('display-none')
+  amountInput.value = 1
+  setTimeout(() => {
+    resultDiv.classList.toggle('display-none')
+  },3000)
+  //console.log(cartItems);
     saveItems()
 };
 

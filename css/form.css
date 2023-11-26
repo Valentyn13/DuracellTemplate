@@ -92,4 +92,17 @@
     font-weight: 500;
     color:  white  ;
     background-color: var(--color-b915013);
+    margin-bottom: 120px;
+}
+
+.form-action-result {
+    margin-top: 20px;
+    padding: 8px;
+    text-transform: uppercase;
+    background-color: #40af24;
+    border: 1px solid white;
+}
+
+.display-none {
+    display: none;
 }

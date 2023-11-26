@@ -22,26 +22,33 @@ const submitForm = async (event) => {
     text += `Товар: \n${elem.name} \nКол-во: ${elem.amount}\nЦена за 1 шт: ${elem.price}\n\n`;
   });
   text += `Всего:${totalPrice.toFixed(2)}`;
-  console.log(text);
+
+
+  if (cartItems.length !== 0) {
     try {
-      const response = await fetch(API, {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json',
-          },
-          body:JSON.stringify({
-              chat_id:CHAT_URL,
-              text
-          })
-      })
-
-      if(!response.ok) {
-          throw new Error(response.statusText)
+        const response = await fetch(API, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body:JSON.stringify({
+                chat_id:CHAT_URL,
+                text
+            })
+        })
+  
+        if(!response.ok) {
+            throw new Error(response.statusText)
+        }
+  
+        form.reset()
+        console.log(text);
+  
+      } catch (error) {
+        console.error(error)
       }
+  } else {
+    console.log('Forbiden')
+  }
 
-      form.reset()
-
-    } catch (error) {
-      console.error(error)
-    }
 };
