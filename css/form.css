@@ -1,7 +1,21 @@
 .add-product-form-controll{
-    margin: 0 auto;
-    max-width: 400px;
+    width: 100%;
+    background-color: rgba(126, 116, 116, 0.173);
+    padding: 10px;
 }
+
+.form-another-style{
+    padding: 20px;
+}
+.form-another-style select {
+ background-color: white;
+ color: #9c9c9c;
+}
+
+.form-another-style select option {
+    background-color: white;
+    color: #9c9c9c;
+   }
 .add-product-form{
     display: flex;
     flex-direction: column;

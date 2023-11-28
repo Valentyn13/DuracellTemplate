@@ -3,17 +3,16 @@
   data-money-format="${{amount}}">
 
 <head>
-  <link rel="canonical" href="micro-5-power-bank.html" />
   <link rel="shortcut icon" href="../cdn/shop/files/cropped-favicon-180x180_32x32.jpg?v=1694556760" type="image/png" />
   <link rel="apple-touch-icon" href="../cdn/shop/files/dmp-webclip_32x32.png?v=1683658546" type="image/png" />
 
   
 
   <link rel="stylesheet" href="../css/cart.css">
-  <script src="../logic/cart.js"></script>
+  <script src="../js/cart.js"></script>
   <script src="../logic/form.js"></script>
   <link rel="stylesheet" href="../css/form.css">
-  
+  <link rel="stylesheet" href="../css/stick-header.css">
   
   
   <title>
@@ -24,7 +23,6 @@
     content="The Duracell Micro 5 Power Bank magnetically snaps to your iPhone to deliver a fast wireless charge that lasts hours — and stays securely connected even on-the-go. Its ultra-slim profile gives you more power without the bulk. And when you want to relax or make video calls, the fold-out stand gives you the best viewing angle without blocking your screen, camera, or speaker." />
 
   <meta property="og:site_name" content="Duracell Mobile Power" />
-  <meta property="og:url" content="https://duracellmobilepower.com/products/micro-5-power-bank" />
   <meta property="og:title" content="Duracell Micro 5 Power Bank: Magnetic, Wireless" />
   <meta property="og:type" content="product" />
   <meta property="og:description"
@@ -56,326 +54,33 @@
   <meta name="google-site-verification" content="azk6CJ0dCY_gxyyYp8i0FBMMZ5ApsRuwY-RHHEx8IOA" />
   <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/74498900257/digital_wallets/dialog" />
   <meta name="shopify-checkout-api-token" content="04048331180af8a3b1ff0bb74a0cd090" />
-  <link rel="alternate" type="application/json+oembed" href="micro-5-power-bank.oembed" />
 
 </head>
 
 <body class="template-product">
-  <div class="gold-topbanner">
-  </div>
-    <!-- <nav class="navigation-wrap">
-      <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
-        role="banner" class="navigation white w-nav">
-        <div class="navigation-full-copy white">
-          <div class="navigation-container">
-            <div class="navigation-left">
-              <a href="../index.htm" class="w-nav-brand"><img
-                  src="../cdn/shop/t/12/assets/group-51.svg?v=85844410582932309551694570907" loading="lazy" width="140"
-                  alt="Duracell Mobile Power Logo in Black" /></a>
-            </div>
-            <div class="navigation-right">
-              <nav role="navigation" class="nav-menu-2 w-nav-menu">
-                <div class="flex-row-2 gap-4">
-                  <div data-hover="true" data-delay="150" class="dropdown-2 w-dropdown">
-                    <div class="dropdown-toggle w-dropdown-toggle">
-                      <div class="drop-arrow-plain black w-icon-dropdown-toggle"></div>
-                      <div class="nav-links dropdown black">power banks</div>
-                    </div>
-                    <nav class="dropdown-list-2 w-dropdown-list">
-                      <div class="dropdown-list-full-wrapper black">
-                        <div class="navigation-drop-container">
-                          <div class="navigation-column-description">
-                            <div class="flex-col-2 gap-12">
-                              <div class="subtitle black">Categories</div>
-                              <div class="flex-col gap-12">
-                                <a href="../pages/shop.html" class="text-block black">Shop All Power Banks</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="flex-col gap-12">
-                            <div class="w-dyn-list" udy-collection="product">
-                              <div role="list" class="w-dyn-items w-row">
-                                <div role="listitem" class="collection-item-2 black w-dyn-item w-col w-col-4">
-                                  <a href="charge-10-power-bank.html" class="flex-col gap-16 w-inline-block">
-                                    <div class="img-wrap">
-                                      <img loading="lazy" width="180" alt=""
-                                        src="../643577be43537834790fad7f/643adaf40fae2c3ea2904469_charge%201-2.png" />
-                                    </div>
-                                    <h5 class="gray-for-the-nav blacked">
-                                      Everyday Power
-                                    </h5>
-                                  </a>
-                                </div>
-                                <div role="listitem" class="collection-item-2 black w-dyn-item w-col w-col-4">
-                                  <a href="core-10-power-bank.html" class="flex-col gap-16 w-inline-block">
-                                    <div class="img-wrap">
-                                      <img loading="lazy" width="180" alt=""
-                                        src="../643577be43537834790fad7f/643ad809fa68306725bdd416_core-1.png" />
-                                    </div>
-                                    <h5 class="gray-for-the-nav blacked">
-                                      Wireless, Multiport.
-                                    </h5>
-                                  </a>
-                                </div>
-                                <div role="listitem" class="collection-item-2 black w-dyn-item w-col w-col-4">
-                                  <a href="micro-5-power-bank.html" class="flex-col gap-16 w-inline-block">
-                                    <div class="img-wrap">
-                                      <img loading="lazy" width="180" alt=""
-                                        src="../643577be43537834790fad7f/64357e285cf78f5bfc6db00e_micro-1.png" />
-                                    </div>
-                                    <h5 class="gray-for-the-nav blacked">
-                                      Magnetic, Wireless
-                                    </h5>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </nav>
-                  </div>
-                </div>
-                <div class="flex-row-2 gap-48">
-                  <a href="../pages/contact-us.html" class="nav-links black w-nav-link">CONTACT</a>
-                </div>
-              </nav>
-            </div>
-          </div>
+
+
+
+  <!-- STICK HEADER -->
+  <div class="stick-header">
+    <div class="stcik-header__logo">
+      <a href="/index.htm">Logo</a>
+        <img src="" alt="">
+    </div>
+    <div class="cart-section">
+
+        <div class="cart-section__image" onclick="toggleCart()">
+            <img  src="/img/cart-white.png" alt="">
+            <div class="cart-section__amount">0</div>
         </div>
-      </div>
-      <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-out"
-        data-easing2="ease-out" role="banner" class="navigation-mob white w-nav">
-        <div class="navigation-container-mob">
-          <a href="../index.htm" class="w-nav-brand"><img
-              src="../cdn/shop/t/12/assets/group-51.svg?v=85844410582932309551694570907"
-              alt="Duracell Mobile Power Logo in Black" class="logo-tab" /></a>
-          <nav role="navigation" class="mobile-nav black w-nav-menu">
-            <div data-delay="0" data-hover="false" class="mobile-dropdown w-dropdown">
-              <div class="mobile-toggle w-dropdown-toggle">
-                <div class="black w-icon-dropdown-toggle"></div>
-                <div class="nav-links black">power banks</div>
-              </div>
-              <nav class="dropdown-list-mob black w-dropdown-list">
-                <div class="navigation-column-description">
-                  <div class="flex-col-2 gap-12">
-                    <div class="flex-col gap-12">
-                      <a href="../pages/shop.html" class="text-block black">Shop All Power Banks</a>
-                    </div>
-                  </div>
-                  <div class="flex-col-2 gap-12">
-                    <div class="subtitle black">most popular</div>
-                  </div>
-                </div>
-                <div class="flex-col gap-12">
-                  <div class="w-dyn-list" udy-collection="product">
-                    <div role="list" class="collection-list w-dyn-items w-row">
-                      <div role="listitem" class="collection-item-2 black w-dyn-item w-col w-col-4">
-                        <a href="charge-10-power-bank.html" class="flex-col gap-16 w-inline-block">
-                          <div class="img-wrap">
-                            <img loading="lazy" width="180" alt=""
-                              src="../643577be43537834790fad7f/643adaf40fae2c3ea2904469_charge%201-2.png" />
-                          </div>
-                          <h5 class="black mobile">Everyday Power</h5>
-                        </a>
-                      </div>
-                      <div role="listitem" class="collection-item-2 black w-dyn-item w-col w-col-4">
-                        <a href="core-10-power-bank.html" class="flex-col gap-16 w-inline-block">
-                          <div class="img-wrap">
-                            <img loading="lazy" width="180" alt=""
-                              src="../643577be43537834790fad7f/643ad809fa68306725bdd416_core-1.png" />
-                          </div>
-                          <h5 class="black mobile">Wireless, Multiport.</h5>
-                        </a>
-                      </div>
-                      <div role="listitem" class="collection-item-2 black w-dyn-item w-col w-col-4">
-                        <a href="micro-5-power-bank.html" class="flex-col gap-16 w-inline-block">
-                          <div class="img-wrap">
-                            <img loading="lazy" width="180" alt=""
-                              src="../643577be43537834790fad7f/64357e285cf78f5bfc6db00e_micro-1.png" />
-                          </div>
-                          <h5 class="black mobile">Magnetic, Wireless</h5>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            </div>
-            <a href="../pages/contact-us.html" class="nav-links black w-nav-link">contact</a>
-          </nav>
-          <div class="menu-mob black w-nav-button">
-            <div class="w-icon-nav-menu"></div>
-          </div>
-        </div>
-      </div>
-    </nav> -->
+    </div>
+</div>
+<!-- STICK HEADER -->
+
+
 
   <main id="product" class="_100vh black">
-    <!-- <nav class="navigation-wrap-static">
-      <nav class="navigation-wrap">
-        <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
-          role="banner" class="navigation w-nav">
-          <div class="navigation-full-copy">
-            <div class="navigation-container">
-              <div class="navigation-left">
-                <a href="../index.htm" aria-current="page" class="w-nav-brand w--current"><img
-                    src="../cdn/shop/t/12/assets/duracell-logo.svg?v=160040128349250632371694570907" loading="lazy"
-                    width="140" alt="Duracell Mobile Power Logo in white" /></a>
-              </div>
-              <div class="navigation-right">
-                <nav role="navigation" class="nav-menu-2 w-nav-menu">
-                  <div class="flex-row-2 gap-4">
-                    <div data-hover="true" data-delay="150" class="dropdown-2 w-dropdown">
-                      <div class="dropdown-toggle w-dropdown-toggle">
-                        <div class="drop-arrow-plain w-icon-dropdown-toggle"></div>
-                        <div class="nav-links">power banks</div>
-                      </div>
-                      <nav class="dropdown-list-2 w-dropdown-list">
-                        <div class="dropdown-list-full-wrapper">
-                          <div class="navigation-drop-container">
-                            <div class="navigation-column-description">
-                              <div class="flex-col-2 gap-12">
-                                <div class="subtitle white">Categories</div>
-                                <div class="flex-col gap-12">
-                                  <a href="../pages/shop.html" class="text-block">Shop All Power Banks</a>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="flex-col gap-12">
-                              <div class="w-dyn-list" udy-collection="product">
-                                <div role="list" class="w-dyn-items w-row">
-                                  <div role="listitem" class="collection-item-2 w-dyn-item w-col w-col-4">
-                                    <a href="charge-10-power-bank.html" class="flex-col gap-16 w-inline-block">
-                                      <div class="img-wrap">
-                                        <img loading="lazy" width="180" alt=""
-                                          src="../643577be43537834790fad7f/643adaf40fae2c3ea2904469_charge%201-2.png" />
-                                      </div>
-                                      <h5 class="gray-for-the-nav">
-                                        Everyday Power
-                                      </h5>
-                                    </a>
-                                  </div>
-                                  <div role="listitem" class="collection-item-2 w-dyn-item w-col w-col-4">
-                                    <a href="core-10-power-bank.html" class="flex-col gap-16 w-inline-block">
-                                      <div class="img-wrap">
-                                        <img loading="lazy" width="180" alt=""
-                                          src="../643577be43537834790fad7f/643ad809fa68306725bdd416_core-1.png" />
-                                      </div>
-                                      <h5 class="gray-for-the-nav">
-                                        Wireless, Multiport.
-                                      </h5>
-                                    </a>
-                                  </div>
-                                  <div role="listitem" class="collection-item-2 w-dyn-item w-col w-col-4">
-                                    <a href="micro-5-power-bank.html" class="flex-col gap-16 w-inline-block">
-                                      <div class="img-wrap">
-                                        <img loading="lazy" width="180" alt=""
-                                          src="../643577be43537834790fad7f/64357e285cf78f5bfc6db00e_micro-1.png" />
-                                      </div>
-                                      <h5 class="gray-for-the-nav">
-                                        Magnetic, Wireless
-                                      </h5>
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </nav>
-                    </div>
-                  </div>
-                  <div class="flex-row-2 gap-48">
-                    <a href="../pages/contact-us.html" class="nav-links w-nav-link">CONTACT</a>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-out"
-          data-easing2="ease-out" role="banner" class="navigation-mob w-nav">
-          <div class="navigation-container-mob">
-            <a href="../index.htm" aria-current="page" class="w-nav-brand w--current"><img
-                src="../cdn/shop/t/12/assets/duracell-logo.svg?v=160040128349250632371694570907"
-                alt="Duracell Mobile Power Logo in white" class="logo-tab" /></a>
-            <nav role="navigation" class="mobile-nav w-nav-menu">
-              <div data-delay="0" data-hover="false" class="mobile-dropdown w-dropdown">
-                <div class="mobile-toggle w-dropdown-toggle">
-                  <div class="w-icon-dropdown-toggle"></div>
-                  <div class="nav-links">power banks</div>
-                </div>
-                <nav class="dropdown-list-mob w-dropdown-list">
-                  <div class="navigation-column-description">
-                    <div class="flex-col-2 gap-12">
-                      <div class="flex-col gap-12">
-                        <a href="../pages/shop.html" class="text-block">Shop All Power Banks</a>
-                      </div>
-                    </div>
-                    <div class="flex-col-2 gap-12">
-                      <div class="subtitle">most popular</div>
-                    </div>
-                  </div>
-                  <div class="flex-col gap-12">
-                    <div class="w-dyn-list" udy-collection="product">
-                      <div role="list" class="collection-list w-dyn-items w-row">
-                        <div role="listitem" class="collection-item-2 w-dyn-item w-col w-col-4">
-                          <a href="charge-10-power-bank.html" class="flex-col gap-16 w-inline-block">
-                            <div class="img-wrap">
-                              <img loading="lazy" width="180" alt=""
-                                src="../643577be43537834790fad7f/643adaf40fae2c3ea2904469_charge%201-2.png" />
-                            </div>
-                            <h5 class="mobile">Everyday Power</h5>
-                          </a>
-                        </div>
-                        <div role="listitem" class="collection-item-2 w-dyn-item w-col w-col-4">
-                          <a href="core-10-power-bank.html" class="flex-col gap-16 w-inline-block">
-                            <div class="img-wrap">
-                              <img loading="lazy" width="180" alt=""
-                                src="../643577be43537834790fad7f/643ad809fa68306725bdd416_core-1.png" />
-                            </div>
-                            <h5 class="mobile">Wireless, Multiport.</h5>
-                          </a>
-                        </div>
-                        <div role="listitem" class="collection-item-2 w-dyn-item w-col w-col-4">
-                          <a href="micro-5-power-bank.html" class="flex-col gap-16 w-inline-block">
-                            <div class="img-wrap">
-                              <img loading="lazy" width="180" alt=""
-                                src="../643577be43537834790fad7f/64357e285cf78f5bfc6db00e_micro-1.png" />
-                            </div>
-                            <h5 class="mobile">Magnetic, Wireless</h5>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-              <a href="../pages/contact-us.html" class="nav-links w-nav-link">contact</a>
-            </nav>
-            <div class="menu-mob w-nav-button">
-              <div class="w-icon-nav-menu"></div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </nav> -->
-<!-- NAVIGATION -->
-    <div class="container-lg w-container">
-      <div class="breadcrumb">
-        <div class="flex-row gap-24">
-          <a href="../index.htm" class="w-inline-block">
-            <div class="gotham-med">home</div>
-          </a>
-          <a href="../pages/shop.html" class="w-inline-block">
-            <div class="gotham-med">POWER BANKS</div>
-          </a>
-          <a href="micro-5-power-bank.html" class="w-inline-block">
-            <div class="gotham-med gold">Micro 5 Power Bank</div>
-          </a>
-        </div>
-      </div>
+
 
       <div id="buybutton" class="flex-row align-centre tablet">
 
@@ -450,9 +155,19 @@
               <p class="p-callout">Say goodbye to tangled charge cables.</p>
             </div>
 
+
+
+
+
+            <!-- ADD TOCART FORM -->
             <div class="add-product-form-controll">
-              <form class="add-product-form" onsubmit="addToCart(event,{price:39.99, name:'Micro 5 Power Bandk',
-              image: '../643577be43537834790fad7f/64357e285cf78f5bfc6db00e_micro-1.png'})" action="#">
+              <form 
+              onsubmit="addToCart(event)"
+              data-type="1"
+              data-image="/img/product_1/img1.png"
+              data-price="4234"
+              data-name="Super laptop for gaming and valorant bla blablaballbalalb"
+              class="add-product-form">
                 <h2 >Choose Amount:</h3>
                 <select class="amoutn-select" name="amount" id="amount">
                     <option value='1' selected>1</option>
@@ -465,6 +180,14 @@
                 <div class="form-action-result display-none ">Товар добавлен в корзину</div>
               </form>
             </div>
+           <!-- ADD TOCART FORM -->
+
+
+
+
+
+
+
             <!--------------------------------------UNDERSLIDER DESCRIPTION END----------------------------------------- -->
             <div class="buy-button-wrapper">
 
@@ -583,6 +306,32 @@
       </div>
     </div>
     <div class="container-md bruh w-container">
+      <div class="_48px-gap"></div>
+
+      <div class="add-product-form-controll form-another-style ">
+        <form 
+        onsubmit="addToCart(event)"
+        data-type="1"
+        data-image="/img/product_1/img1.png"
+        data-price="4234"
+        data-name="Super laptop for gaming and valorant bla blablaballbalalb"
+        class="add-product-form">
+          <h2 >Choose Amount:</h3>
+          <select class="amoutn-select" name="amount" id="amount">
+              <option value='1' selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+          </select>
+          <br><br>
+          <button class="submit-add-product-from" type="submit">ADD TO CART</button>
+          <div class="form-action-result display-none ">Товар добавлен в корзину</div>
+        </form>
+      </div>
+
+      <div class="_48px-gap"></div>
+      <div class="_48px-gap"></div>
+      <div class="_48px-gap"></div>
       <div class="_48px-gap"></div>
       <div class="flex-col gap-24 wtf-copy">
         <div class="features-rich-text-copy w-richtext">
@@ -747,6 +496,29 @@
   <section>
     <div class="container-lg w-container">
       <div class="_48px-gap"></div>
+
+
+      <div class="add-product-form-controll form-another-style ">
+        <form 
+        onsubmit="addToCart(event)"
+        data-type="1"
+        data-image="/img/product_1/img1.png"
+        data-price="4234"
+        data-name="Super laptop for gaming and valorant bla blablaballbalalb"
+        class="add-product-form">
+          <h2 >Choose Amount:</h3>
+          <select class="amoutn-select" name="amount" id="amount">
+              <option value='1' selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+          </select>
+          <br><br>
+          <button class="submit-add-product-from" type="submit">ADD TO CART</button>
+          <div class="form-action-result display-none ">Товар добавлен в корзину</div>
+        </form>
+      </div>
+
       <div class="_48px-gap"></div>
       <div class="flex-col gap-24 padding-bottom-36">
         <h2>More Ways to Power Up</h2>
@@ -761,25 +533,25 @@
           <div role="listitem" class="w-dyn-item w-col w-col-4">
             <img src="../643577be43537834790fad7f/643ada7edfeb8bb903b2121c_charge%204.png" loading="lazy" alt="" />
             <div class="product-info">
-              <h2 class="shop-h2">Charge 10 Power Bank</h2>
+              <h2 class="shop-h2">Product 1</h2>
               <p class="shop-p-copy-copy">Everyday Power</p>
-              <a href="charge-10-power-bank.html" class="goldlinks">shop now</a>
+              <a href="/products/product_1.html" class="goldlinks">shop now</a>
             </div>
           </div>
           <div role="listitem" class="w-dyn-item w-col w-col-4">
             <img src="../643577be43537834790fad7f/643ad8114581277607d40776_core-4.png" loading="lazy" alt="" />
             <div class="product-info">
-              <h2 class="shop-h2">Core 10 Power Bank</h2>
+              <h2 class="shop-h2">Product 3</h2>
               <p class="shop-p-copy-copy">Wireless, Multiport.</p>
-              <a href="core-10-power-bank.html" class="goldlinks">shop now</a>
+              <a href="/products/product_3.html" class="goldlinks">shop now</a>
             </div>
           </div>
           <div role="listitem" class="w-dyn-item w-col w-col-4">
             <img src="../643577be43537834790fad7f/64357e281d4aec6ff6fa04f9_micro-4.png" loading="lazy" alt="" />
             <div class="product-info">
-              <h2 class="shop-h2">Micro 5 Power Bank</h2>
+              <h2 class="shop-h2">Product 4</h2>
               <p class="shop-p-copy-copy">Magnetic, Wireless</p>
-              <a href="micro-5-power-bank.html" class="goldlinks">shop now</a>
+              <a href="/products/product_4.html" class="goldlinks">shop now</a>
             </div>
           </div>
         </div>
@@ -788,64 +560,68 @@
     <div class="gray-block big"></div>
   </section>
 
-  <div class="modal-cart-icon-wrapper">
-    <div class="cart-items-count">0</div>
-    <div onclick="openCart()" class="modal-cart-img-controll">
-      <img src="/img/cart-white.png" alt="cart icon">
-    </div>
-  </div>
-
-  <section class="my-cart-wrapper">
-    <div class="my-cart-content">
-      <!-- <div class="my-close-cart-button">
-        <div onclick="openCart()">
-          <img src="/img/close-cart.png" alt="csole-button">
+  <section class="cart">
+    <div class="cart__header">
+        <div class="cart__logo">
+            Кошик
+            <img src="" alt="">
         </div>
-      </div> -->
-      <div class="my-cart-items-wrapper">
-        <h3>Ваш Кошик
-          <div class="my-close-cart-button">
-            <div onclick="openCart()">
-              <img src="/img/close-cart.png" alt="csole-button">
+        <div class="cart-section">
+
+            <div onclick="toggleCart()" class="cart-section__close">
+                <svg class="" fill="#000000" height="20px" width="20px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512 512" xml:space="preserve">
+                    <g>
+                        <g>
+                            <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512 
+                       512,452.922 315.076,256 		" />
+                        </g>
+                    </g>
+                </svg>
             </div>
-          </div>
-        </h3>
-        <div class="cartItemList">
-          
         </div>
-      </div>
-      <br>
-      <div class="cart-total-price">Total: 0</div>
-      <br>
-      <br>
-      <div class="make-order-form-controll">
-
-        <form  class="make-order-form" action="#" onsubmit="submitForm(event)">
-          <label class="order-form-element">
-            <!-- <div>Your name:</div> -->
-            <input class="name-input" name="name" required type="text" placeholder="Ваше ім'я">
-          </label>
-          <label class="order-form-element">
-            <!-- <div>Phone:</div> -->
-            <input class="phone-input" autocomplete="off" name="phone" required  type="text" placeholder="Ваш номер телефону">
-          </label>
-          <label class="order-form-element">
-            <!-- <div>City:</div> -->
-            <input class="location-input" name="city" type="text" placeholder="Місто">
-          </label>
-          <label class="order-form-element">
-            <!-- <div>Nova pochta office:</div> -->
-            <input type="number" name="office" placeholder="Номер відділення Нової пошти">
-          </label>
-          <button class="compelte-button" type="submit">замовити</button>
-        </form>
-      </div>
     </div>
-  </section>
+    <div class="cart__list">
+         <!-- <div class="cart__element">
+            <div class="cart__element-top">
+                <div class="cart__element-image">
+                    <img src="./img/cartproduct.webp" alt="elem image">
+                </div>
+                <div class="cart__element-name">Some name of the product dgdsgsdgsgdfgs</div>
+                <div class="cart_element-delete"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="24px" height="24px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000" class="bi bi-three-dots-vertical">
+                      <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                    </svg></div>
+            </div>
+            <div class="cart__element-bottom">
+                <div class="cart_element-amount">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 256 256" xml:space="preserve">
+
+                        <defs>
+                        </defs>
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                            <path d="M 86.5 48.5 h -83 C 1.567 48.5 0 46.933 0 45 s 1.567 -3.5 3.5 -3.5 h 83 c 1.933 0 3.5 1.567 3.5 3.5 S 88.433 48.5 86.5 48.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(29,29,27); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 86.5 48.5 h -83 C 1.567 48.5 0 46.933 0 45 s 1.567 -3.5 3.5 -3.5 h 83 c 1.933 0 3.5 1.567 3.5 3.5 S 88.433 48.5 86.5 48.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(29,29,27); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        </g>
+                        </svg></button>
+                    <div>0</div>
+                    <button><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path fill-rule="evenodd" d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z"/></svg></button>
+                </div>
+                <div class="cart__element-price">2353$</div>
+            </div>
+        </div> -->
+    </div>
+    <div class="cart__make-order">
+        <div class="make-order__total">
+            <p>Разом:</p>
+            <p class="make-order__total-price"><span class="t-price">374583$</span></p>
+        </div>
+        <button class="make-order__button">Замовити зараз</button>
+    </div>
+</section>
           <!--------------------------------------FOOTER ----------------------------------------- -->
   <footer>
-    <!-- <div class="_64px-gap"></div>
-    <div class="_64px-gap"></div> -->
 
   </footer>
 
