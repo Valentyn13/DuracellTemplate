@@ -1403,6 +1403,7 @@ label {
 }
 
 ._100vh.black {
+    padding: 10px 15px;
     background-color: var(--color-n4801eed2)
 }
 
@@ -1948,6 +1949,9 @@ label {
 
 .col-6 {
     width: 50%
+}
+.col-6 img {
+    border-radius: 10px;
 }
 
 .col-6.flex-col.align-centre {

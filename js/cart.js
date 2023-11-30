@@ -11,6 +11,7 @@ function toggleCart() {
 
 function addToCart (e) {
     e.preventDefault()
+    const status = document.querySelector('.addToCart__status')
     let shoulPush = true
     const {type,price,name,image} = e.target.dataset
     const form = e.target
@@ -34,8 +35,20 @@ function addToCart (e) {
         })
         saveCart()
         console.log(cartItems)
+        status.innerHTML = ''
+        status.innerHTML = 'Товар додано у кошик!'
+        status.classList.toggle('addToCart__status-hide')
+        setTimeout(() =>status.classList.toggle('addToCart__status-hide'),1500)
     }else {
-        console.error('Product already in cart, please check the cart!')
+        status.innerHTML = ''
+        status.innerHTML = 'Товар вже у кошику. Ви можете змінити його кількість там'
+        status.classList.toggle('addToCart__status-hide')
+        status.classList.toggle('addToCart__status-error')
+        setTimeout(() =>{
+            status.classList.toggle('addToCart__status-hide')
+            status.classList.toggle('addToCart__status-error')
+        },3700)
+        
     }
     form.reset()
 }

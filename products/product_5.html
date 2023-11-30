@@ -9,11 +9,8 @@
   
 
   <link rel="stylesheet" href="../css/cart.css">
-  <script src="../js/cart.js"></script>
-  <script src="../logic/form.js"></script>
   <link rel="stylesheet" href="../css/form.css">
   <link rel="stylesheet" href="../css/stick-header.css">
-  
   
   <title>
     Duracell Micro 5 Power Bank: Magnetic, Wireless &ndash; Duracell Mobile
@@ -94,37 +91,37 @@
                <!--------------------------------------SLIDER IMAGES TOP----------------------------------------- -->
               <div class="tabs-menu w-tab-menu">
                 <a data-w-tab="Tab 4" class="tab-link w-inline-block w-tab-link w--current"><img width="150" height=""
-                    loading="lazy" alt="" src="/img/product3/img1.jpg"
+                    loading="lazy" alt="" src="/img/product5/img1.webp"
                     class="thumbnail" /></a>
                 <a data-w-tab="Tab 1" class="tab-link w-inline-block w-tab-link"><img width="150" height=""
-                    loading="lazy" alt="" src="/img/product3/img2.jpg"
+                    loading="lazy" alt="" src="/img/product5/img2.webp"
                     class="thumbnail" /></a>
                 <a data-w-tab="Tab 2" class="tab-link w-inline-block w-tab-link"><img width="150" height=""
-                    loading="lazy" alt="" src="/img/product3/img3.jpg"
+                    loading="lazy" alt="" src="/img/product5/img3.webp"
                     class="thumbnail" /></a>
                 <a data-w-tab="Tab 3" class="tab-link w-inline-block w-tab-link"><img width="150" height=""
-                    loading="lazy" alt="" src="/img/product3/img4.jpg"
+                    loading="lazy" alt="" src="/img/product5/img4.webp"
                     class="thumbnail" /></a>
               </div>
  <!--------------------------------------SLIDER IMAGES BOTTOM----------------------------------------- -->
               <div class="tabs-content w-tab-content">
                 <div data-w-tab="Tab 4" class="w-tab-pane w--tab-active">
-                  <img src="/img/product3/img1.jpg" loading="lazy" alt=""
+                  <img src="/img/product5/img1.webp" loading="lazy" alt=""
                     class="productimage" />
                   <div class="radial-bg"></div>
                 </div>
                 <div data-w-tab="Tab 1" class="w-tab-pane">
-                  <img src="/img/product3/img2.jpg" loading="lazy" alt=""
+                  <img src="/img/product5/img2.webp" loading="lazy" alt=""
                     class="productimage" />
                   <div class="radial-bg"></div>
                 </div>
                 <div data-w-tab="Tab 2" class="w-tab-pane">
-                  <img src="/img/product3/img3.jpg" loading="lazy" alt=""
+                  <img src="/img/product5/img3.webp" loading="lazy" alt=""
                     class="productimage" />
                   <div class="radial-bg"></div>
                 </div>
                 <div data-w-tab="Tab 3" class="w-tab-pane">
-                  <img src="/img/product3/img4.jpg" loading="lazy" alt=""
+                  <img src="/img/product5/img4.webp" loading="lazy" alt=""
                     class="productimage" />
                   <div class="radial-bg"></div>
                 </div>
@@ -164,8 +161,8 @@
             <div class="add-product-form-controll">
               <form 
               onsubmit="addToCart(event)"
-              data-type="3"
-              data-image="/img/product3/img2.jpg"
+              data-type="5"
+              data-image="/img/product5/img1.webp"
               data-price="4234"
               data-name="Super laptop for gaming and valorant bla blablaballbalalb"
               class="add-product-form">
@@ -312,8 +309,8 @@
       <div class="add-product-form-controll form-another-style ">
         <form 
         onsubmit="addToCart(event)"
-        data-type="3"
-        data-image="/img/product3/img2.jpg"
+        data-type="5"
+        data-image="/img/product5/img1.webp"
         data-price="4234"
         data-name="Super laptop for gaming and valorant bla blablaballbalalb"
         class="add-product-form">
@@ -502,8 +499,8 @@
       <div class="add-product-form-controll form-another-style ">
         <form 
         onsubmit="addToCart(event)"
-        data-type="3"
-        data-image="/img/product3/img2.jpg"
+        data-type="5"
+        data-image="/img/product5/img1.webp"
         data-price="4234"
         data-name="Super laptop for gaming and valorant bla blablaballbalalb"
         class="add-product-form">
@@ -613,13 +610,37 @@
             </div>
         </div> -->
     </div>
-    <div class="cart__make-order">
+
+
+    <form onsubmit="submitForm(event)" class="submit-form" action="#">
+
+      <div class="order__input-controller ">
+        <input class="back-icon name-icon" type="text" name="name" required placeholder="Ваше ім'я" id="name">
+      </div>
+
+      <div class="order__input-controller ">
+        <input  class="back-icon phone-icon" type="tel" required placeholder="(050) 696-2334" name="phone" id="phone">
+      </div>
+
+      <div class="order__input-controller ">
+        <input class="back-icon location-icon" type="text" name="city" required placeholder="Місто" id="city">
+      </div>
+
+      <div class="order__input-controller">
+        <input type="number" class="back-icon poshta-icon" required placeholder="№ Відділення Нової Пошти" name="office" id="office">
+      </div>
+
+
+      <div class="cart__make-order">
         <div class="make-order__total">
             <p>Разом:</p>
             <p class="make-order__total-price"><span class="t-price">374583$</span></p>
         </div>
-        <button class="make-order__button">Замовити зараз</button>
+        <button type="submit" class="make-order__button">Замовити зараз</button>
     </div>
+
+    </form>
+
 </section>
           <!--------------------------------------FOOTER ----------------------------------------- -->
   <footer>
@@ -634,6 +655,11 @@
 
   <script src="../cdn/shop/t/12/assets/udesly-shopify.min.js?v=183880802978835329421694570908"
     type="text/javascript"></script>
+
+
+    <script src="../js/cart.js"></script>
+    <script src="/js/form.js"></script>
+    <script src="../js/phoneMask.js"></script>
 </body>
 
 </html>

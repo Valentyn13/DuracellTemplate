@@ -1,7 +1,7 @@
 const BOT_TOKEN = "6785310463:AAFxVzPCdeRejfUFeeor1vyTvPXBf2BUYLA";
 const CHAT_URL = "@testOrdersGroup";
-
 const API = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
 
 const submitForm = async (event) => {
   event.preventDefault();
@@ -14,12 +14,12 @@ const submitForm = async (event) => {
 
   let text = ` --------Заявка--------\n Имя: ${name}\n Телефон: ${phone}\n Город:${
     city || "Не указан"
-  }\n Отделение Новой почты: ${office || "Не указано"} \n\n`;
+  }\n Отделение Новой Почты: ${office || "Не указано"} \n\n`;
 
   cartItems.forEach((elem) => {
     const productsPrice = elem.price * elem.amount;
     totalPrice += productsPrice;
-    text += `Товар: \n${elem.name} \nКол-во: ${elem.amount}\nЦена за 1 шт: ${elem.price}\n\n`;
+    text += `Товар: \n${elem.name} \nКол-во: ${elem.amount}\nЦена за 1 шт: ${elem.price}\nЦена за позицию: ${productsPrice}\n\n`;
   });
   text += `Всего:${totalPrice.toFixed(2)}`;
 
@@ -43,7 +43,8 @@ const submitForm = async (event) => {
   
         form.reset()
         console.log(text);
-  
+        localStorage.setItem(LOCAL_STORAGE_CART_KEY, JSON.stringify([]));
+        renderCart()
       } catch (error) {
         console.error(error)
       }

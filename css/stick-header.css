@@ -45,6 +45,7 @@ width: 100%;
 background-color: rgb(245, 245, 245);
 transition: 0.2s;
 z-index: 1002;
+overflow-y: scroll;
 }
 .cart_logo {
     overflow: hidden;
@@ -103,6 +104,7 @@ justify-content: space-between;
 }
 .cart__element-image img {
 width: 100%;
+border-radius: 5px;
 }
 .cart__element-name {
     flex-grow: 1;
@@ -171,9 +173,68 @@ border-radius: 4px;
     width: 200px;
     margin: 0 auto;
 }
-/* Junk */
 
-.block {
-    height: 400px;
-    background-color: green;
+.addToCart__status {
+    color: black;
+    
+    background-color: #5bce8c;
+    font-size: 15px;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    width: 100px;
+    margin-left: 10px;
+    border: 2px solid #00a046;
+    padding: 5px;
+    transition: 0.2s;
+}
+.addToCart__status p{
+    font-size: 18px;
+}
+.addToCart__status-hide {
+    left: -120%;
+}
+.addToCart__status-error {
+    background-color: rgb(221, 111, 96);
+    border: 2px solid red;
+    width: 200px;
+}
+
+
+
+
+
+/* FORM */
+.submit-form {
+ display: flex;
+ flex-direction: column;
+ padding: 15px;
+ gap: 10px;
+ margin-top: 20px;
+ margin-bottom: 50px;
+}
+.order__input-controller input {
+width: 100%;
+font-size: 16px;
+padding: 15px 10px;
+padding-left: 66px;
+}
+
+.back-icon {
+background-position-x: 15px;
+background-position-y: center;
+background-repeat: no-repeat;
+background-size: 30px 30px;
+}
+.name-icon {
+background-image: url(/img/name.png);
+}
+.phone-icon {
+background-image: url(/img/phone.png);
+}
+.location-icon {
+background-image: url(/img/location.png);
+}
+.poshta-icon {
+    background-image: url(/img/poshta.png);
 }
