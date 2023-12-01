@@ -44,7 +44,7 @@ const submitForm = async (event) => {
         form.reset()
         console.log(text);
         localStorage.setItem(LOCAL_STORAGE_CART_KEY, JSON.stringify([]));
-        renderCart()
+        window.location.assign('/products/complete.html')
       } catch (error) {
         console.error(error)
       }

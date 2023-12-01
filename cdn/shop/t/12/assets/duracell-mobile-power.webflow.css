@@ -1919,7 +1919,6 @@ label {
 }
 
 .goldlinks._2 {
-    margin-top: 12px;
     font-size: 18px;
     font-weight: 500;
     line-height: 28px
@@ -1967,12 +1966,19 @@ label {
 }
 
 .plus-link {
-    grid-column-gap: 24px;
+display: flex;
+align-items: center;
+    padding-top: 20px;
     color: #ffffffe6;
-    flex-direction: row;
-    align-items: center;
-    transition: opacity .2s;
-    display: flex
+}
+.plus-link div {
+    padding: 10px 25px;
+    display:inline-block;
+    background-color:var(--color-b915013) ;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 10px;
 }
 
 .plus-link:hover {
